@@ -1,3 +1,4 @@
+// menu oculto
 $(document).ready(function() {
 		$(document).delegate('.open', 'click', function(event){
 			$(this).addClass('oppenned');
@@ -11,3 +12,9 @@ $(document).ready(function() {
 			event.stopPropagation();
 		});
 	});
+// fin menu
+
+function about(){
+	$("#hero" ).hide();
+	$("#about").show();
+}

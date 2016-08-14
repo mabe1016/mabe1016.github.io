@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,39 +17,111 @@
     <link rel="stylesheet" href="css/creative.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
 </head>
-
-<body>
-    <!-- Inserta tu codigo aqui -->
-    <div class="container">
-        <div class="row"> 
-        <!-- menu -->
-        <div class="open">
-          <span class="cls"></span>
-          <span>
-                <ul class="sub-menu ">
-                    <li>
-                        <a href="#about" title="about">Sobre / About</a>
-                    </li>
-                    <li>
-                        <a href="#skills" title="skills">Habilidades / Skills</a>
-                    </li>
-                    <li>
-                        <a href="#jobs" title="jobs">Trabalhos / Jobs</a>
-                    </li>
-                    <li>
-                        <a href="#contact" title="contact">Contato / Contact</a>
-                    </li>
-                </ul>
-            </span>
-          <span class="cls"></span>
-        </div>
-        </div> <!-- fin menu -->
-        <!-- <div>
-            <img src="img/logo1.png">
-        </div> -->
-            
-          
+<body>    <!-- home -->
+    <div class="menu">
+        <div class="row">  <!-- menu oculto -->
+                <div class="open">
+                    <span class="cls"></span>
+                    <span>
+                        <ul class="sub-menu ">
+                            <li>
+                                <a href="#hero" title="home" onclick="hero()">Home</a>
+                            </li>
+                            <li>
+                                <a href="#about" title="about" onclick="about()">About Me</a>
+                            </li>
+                            <li>
+                                <a href="#skills" title="skills" onclick="skills()">Skills</a>
+                            </li>
+                            <li>
+                                <a href="#portfolio" title="Portfolio" onclick="portfolio()">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#contact" title="contact" onclick="portfolio()">Contact</a>
+                            </li>
+                        </ul>
+                    </span>
+                    <span class="cls"></span>
+                </div>
+            </div> <!-- fin menu -->
     </div>
+    <div  id="hero">
+        <div class="container sec1">
+            <div class="row"> <!-- img principal -->
+                <div class="">
+                    <img class="img-p ma" src="img/principal1.png">
+                    <img class="img-p be" src="img/principal2.png">
+                </div>
+                <div class="boton about">
+                    <a href="#about" onclick="about()"><img class="img-btn" src="img/btn-about.png"></a>
+                </div>
+                <div class="boton portfolio portfolio">
+                    <a href="#portfolio"><img class="img-btn " src="img/btn-portfolio.png"></a>
+                </div>
+                <div class="boton skills">
+                    <a href="#skills"><img class="img-btn " src="img/btn-skills.png"></a>
+                </div>
+                <div class="boton contact">
+                   <a href="#contact"><img  class="img-btn  " src="img/btn-contact.png"></a> 
+                </div>
+                <div class="boton portfolio desing">
+                    <a href="#portfolio"><img class="img-btn " src="img/btn-desing.png"></a>
+                </div>        
+                <div class="boton portfolio ux">
+                    <a href="#portfolio"><img class="img-btn " src="img/btn-ux.png"></a>
+                </div>    
+            </div>  
+            <!-- fin home  -->
+        </div> 
+
+    </div>
+        
+    <!-- about -->
+    <div id="about" class="sec2 bg-about" >
+        <div class="container">
+            <div  class="row">
+                <div class="col-md-4">
+                    <img class="img-portfolio" src="img/foto-about2.jpg">
+                </div>
+                <div class="col-md-8 ">
+                    <h1>About Me</h1>
+                    <h5>Sobre Mi</h5>
+                    <p> <strong>Publicista y Coder. Apasionada del diseño y la tecnologia.
+                        Bchiller en Publicidad y Multimedia de la UCSM-Arequipa.
+                        Coder FrontEnd de Laboratoria-Arequipa.</strong> </p>
+                    <p>"Me encanta saber lo que el mundo piensa y siente con respecto a las marcas y productos que rodean el mundo, poder entenderlos para saber que necesitan y quieren saber es lo que me inspira a seguir este mundo de mark"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fin about -->  
+    <div id="skill"><!-- skills -->
+        <div class="container">
+            <div class="row bg-skills">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-8 ">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fin skills -->
+    <!-- jobs -->
+    <div id="jobs">
+        <div class="container">
+            <div class="row bg-skills">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4 ">
+                </div>
+                <div class="col-md-4 ">
+                </div>
+        </div>
+        </div>
+    </div>
+    
+    <!-- fin jobs -->
+   
     
 
 
