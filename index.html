@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/creative.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
 </head>
-<body>    <!-- home -->
+<body> 
     <div class="menu">
         <div class="row">  <!-- menu oculto -->
                 <div class="open">
@@ -45,40 +45,37 @@
                 </div>
             </div> <!-- fin menu -->
     </div>
-    <div  id="hero">
-        <div class="container sec1">
-            <div class="row"> <!-- img principal -->
-                <div class="">
-                    <img class="img-p ma" src="img/principal1.png">
-                    <img class="img-p be" src="img/principal2.png">
-                </div>
-                <div class="boton about">
-                    <a href="#about" onclick="about()"><img class="img-btn" src="img/btn-about.png"></a>
-                </div>
-                <div class="boton portfolio portfolio">
-                    <a href="#portfolio"><img class="img-btn " src="img/btn-portfolio.png"></a>
-                </div>
-                <div class="boton skills">
-                    <a href="#skills"><img class="img-btn " src="img/btn-skills.png"></a>
-                </div>
-                <div class="boton contact">
-                   <a href="#contact"><img  class="img-btn  " src="img/btn-contact.png"></a> 
-                </div>
-                <div class="boton portfolio desing">
-                    <a href="#portfolio"><img class="img-btn " src="img/btn-desing.png"></a>
-                </div>        
-                <div class="boton portfolio ux">
-                    <a href="#portfolio"><img class="img-btn " src="img/btn-ux.png"></a>
-                </div>    
-            </div>  
-            <!-- fin home  -->
-        </div> 
-
-    </div>
-        
+    <!-- home -->
+    <div  id="home" class="sec1">
+        <div class="row"> <!-- img principal -->
+            <div class="">
+                <img class="img-p ma" src="img/principal1.png">
+                <img class="img-p be" src="img/principal2.png">
+            </div>
+            <div class="boton about">
+                <a href="#about" onclick="about()"><img class="img-btn" src="img/btn-about.png"></a>
+            </div>
+            <div class="boton portfolio ">
+                <a href="#portfolio" onclick="portfolio()"><img class="img-btn " src="img/btn-portfolio.png"></a>
+            </div>
+            <div class="boton skills">
+                <a href="#skills" onclick="skills()"><img class="img-btn " src="img/btn-skills.png"></a>
+            </div>
+            <div class="boton contact">
+               <a href="#contact" onclick="contact()"><img  class="img-btn  " src="img/btn-contact.png"></a> 
+            </div>
+            <div class="boton portfolio desing">
+                <a href="#portfolio" onclick="portfolio()"><img class="img-btn " src="img/btn-desing.png"></a>
+            </div>        
+            <div class="boton portfolio ux">
+                <a href="#portfolio" onclick="portfolio()"><img class="img-btn " src="img/btn-ux.png"></a>
+            </div>    
+        </div>
+    </div><!-- fin home -->
+    
     <!-- about -->
-    <div id="about" class="sec2 bg-about" >
-        <div class="container">
+    <div id="about" class="sec2 " >
+        <div class="container bg-about">
             <div  class="row">
                 <div class="col-md-4">
                     <img class="img-portfolio" src="img/foto-about2.jpg">
@@ -93,9 +90,10 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- fin about -->  
-    <div id="skill"><!-- skills -->
+    </div><!-- fin about -->  
+    
+    <!-- skills -->
+    <div id="skill">
         <div class="container">
             <div class="row bg-skills">
                 <div class="col-md-4">
@@ -106,8 +104,9 @@
         </div>
     </div>
     <!-- fin skills -->
-    <!-- jobs -->
-    <div id="jobs">
+    
+    <!-- portfolio -->
+    <div id="portfolio">
         <div class="container">
             <div class="row bg-skills">
                 <div class="col-md-4">
@@ -118,9 +117,17 @@
                 </div>
         </div>
         </div>
-    </div>
+    </div><!-- fin portfolio -->
     
-    <!-- fin jobs -->
+    <!-- contact -->
+    <!-- <div id="contact">
+        <div class="bg-azul">
+            <img src="img/foto-about.jpg">
+            <h1>Maria Belen Gamarra Zamudio</h1>
+            <div><i class="fa fa-facebook-square" aria-hidden="true"></i> <i class="fa fa-github-square" aria-hidden="true"></i> <i class="fa fa-google-plus-square" aria-hidden="true"></i></div>
+        </div>    
+    </div>  --> <!-- fin contact -->
+
    
     
 

@@ -14,7 +14,16 @@ $(document).ready(function() {
 	});
 // fin menu
 
+
 function about(){
-	$("#hero" ).hide();
+	$("#home" ).hide();
 	$("#about").show();
 }
+// function skills(){
+// 	$("#hero").hide();
+// 	$("#skills").show();
+// }
+// function contact(){
+// 	$("#hero" ).hide();
+// 	$("#contact").show();
+// }
