@@ -13,17 +13,40 @@ $(document).ready(function() {
 		});
 	});
 // fin menu
-
+function home(){
+	$("#about" ).hide();
+	$("#skills" ).hide();
+	$("#portfolio" ).hide();
+	$("#contact" ).hide();
+	$("#home").show();
+}
 
 function about(){
 	$("#home" ).hide();
+	$("#portfolio" ).hide();
+	$("#skills" ).hide();
+	$("#contact" ).hide();
 	$("#about").show();
 }
-// function skills(){
-// 	$("#hero").hide();
-// 	$("#skills").show();
-// }
-// function contact(){
-// 	$("#hero" ).hide();
-// 	$("#contact").show();
-// }
+function skills(){
+	$("#home" ).hide();
+	$("#about" ).hide();
+	$("#portfolio" ).hide();
+	$("#contact" ).hide();
+	$("#skills").show();
+}
+function portfolio(){
+	$("#home" ).hide();
+	$("#about" ).hide();
+	$("#skills" ).hide();
+	$("#contact" ).hide();
+	$("#portfolio").show();
+}
+
+function contact(){
+	$("#home" ).hide();
+	$("#about" ).hide();
+	$("#skills" ).hide();
+	$("#portfolio" ).hide();
+	$("#contact").show();
+}

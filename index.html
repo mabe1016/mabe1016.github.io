@@ -8,42 +8,47 @@
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Anton|Pacifico|Passion+One|Rubik" rel="stylesheet"><!-- noborrar -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="css/animate.min.css" type="text/css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
 </head>
-<body> 
-    <div class="menu">
-        <div class="row">  <!-- menu oculto -->
-                <div class="open">
-                    <span class="cls"></span>
-                    <span>
-                        <ul class="sub-menu ">
-                            <li>
-                                <a href="#hero" title="home" onclick="hero()">Home</a>
-                            </li>
-                            <li>
-                                <a href="#about" title="about" onclick="about()">About Me</a>
-                            </li>
-                            <li>
-                                <a href="#skills" title="skills" onclick="skills()">Skills</a>
-                            </li>
-                            <li>
-                                <a href="#portfolio" title="Portfolio" onclick="portfolio()">Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="#contact" title="contact" onclick="portfolio()">Contact</a>
-                            </li>
-                        </ul>
-                    </span>
-                    <span class="cls"></span>
-                </div>
-            </div> <!-- fin menu -->
+<body>
+    <div class="menu"><!-- menu oculto -->
+        <div class="row">
+            <div class="open2"><a href="#home" onclick="home()"><!-- <i class="fa fa-home" aria-hidden="true"></i> --><img src="img/btn-return.png"></a></div>
+            <div class="open">
+                <span class="cls"></span>
+                <span>
+                    <ul class="sub-menu ">
+                        <li>
+                            <a href="#home" title="home" onclick="home()">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about" title="about" onclick="about()">About Me</a>
+                        </li>
+                        <li>
+                            <a href="#skills" title="skills" onclick="skills()">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" title="Portfolio" onclick="portfolio()">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#contact" title="contact" onclick="contact()">Contact</a>
+                        </li>
+                    </ul>
+                </span>
+                <span class="cls"></span>
+            </div>
+        </div> <!-- fin menu -->
     </div>
     <!-- home -->
     <div  id="home" class="sec1">
@@ -75,25 +80,52 @@
     
     <!-- about -->
     <div id="about" class="sec2 " >
-        <div class="container bg-about">
-            <div  class="row">
-                <div class="col-md-4">
-                    <img class="img-portfolio" src="img/foto-about2.jpg">
-                </div>
-                <div class="col-md-8 ">
-                    <h1>About Me</h1>
-                    <h5>Sobre Mi</h5>
-                    <p> <strong>Publicista y Coder. Apasionada del diseño y la tecnologia.
-                        Bchiller en Publicidad y Multimedia de la UCSM-Arequipa.
-                        Coder FrontEnd de Laboratoria-Arequipa.</strong> </p>
-                    <p>"Me encanta saber lo que el mundo piensa y siente con respecto a las marcas y productos que rodean el mundo, poder entenderlos para saber que necesitan y quieren saber es lo que me inspira a seguir este mundo de mark"</p>
+        <div class="bg-mosaico">
+            <div class="bg-blanco">
+                <div  class="row bg-about">
+                    <div class="col-md-4 ">
+                        <img class="img-portfolio margin-100" src="img/foto-about2.jpg">
+                    </div>
+                    <div class="col-md-8 ">
+                        <p class="margin-p titulo">About Me</p>
+                        <div class="row">
+                            <div class="col-md-1">
+                                <img src="img/trian.png" class="margin-p">
+                            </div>
+                            <div class="col-md-11"> 
+                                <p class="margin-p"><b>Publicista y Coder. Apasionada del  diseño y la tecnologia.
+                                 Publicidad y Multimedia de la UCSM-Arequipa.
+                                Coder FrontEnd de Laboratoria-Arequipa.</b></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-1">
+                                <img src="img/trian.png" class="margin-p">
+                            </div>
+                            <div class="col-md-11">
+                                <p class="margin-p">"Me encanta saber que piensan y sienten las personas con respecto a las marcas y productos que rodean el mundo, poder entenderlos para saber que necesitan, es lo que me inspira a seguir este mundo de innovaciones."</p>
+                                <p class="margin-p"></p>
+                            </div>
+                        </div>
+                        <div class="row hoverico lista-img center">
+                                <ul>
+                                    <li><img src="img/crea.png"><span>Creativa</span></li>
+                                    <li><img src="img/mkt.png"><span>Marketing Estratega</span></li>
+                                    <li><img src="img/team.png"><span>Trabajo en Equipo</span></li>
+                                </ul>
+                        </div>
+                        
+
+                        
+                        
+                    </div>
                 </div>
             </div>
         </div>
     </div><!-- fin about -->  
     
     <!-- skills -->
-    <div id="skill">
+    <div id="skill" class="sec3">
         <div class="container">
             <div class="row bg-skills">
                 <div class="col-md-4">
@@ -106,7 +138,7 @@
     <!-- fin skills -->
     
     <!-- portfolio -->
-    <div id="portfolio">
+    <div id="portfolio" class="sec4">
         <div class="container">
             <div class="row bg-skills">
                 <div class="col-md-4">
@@ -120,13 +152,19 @@
     </div><!-- fin portfolio -->
     
     <!-- contact -->
-    <!-- <div id="contact">
-        <div class="bg-azul">
-            <img src="img/foto-about.jpg">
-            <h1>Maria Belen Gamarra Zamudio</h1>
-            <div><i class="fa fa-facebook-square" aria-hidden="true"></i> <i class="fa fa-github-square" aria-hidden="true"></i> <i class="fa fa-google-plus-square" aria-hidden="true"></i></div>
+    <div id="contact" class="sec5">
+        <div class="bg-mosaico">
+            <div class="bg-blanco">
+                <img src="img/foto-about.jpg" class="img-portfolio center">
+                <p class="">Maria Belen Gamarra Zamudio</p>
+                <div>
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    <i class="fa fa-github-square" aria-hidden="true"></i>
+                    <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+                </div>
+            </div>   
         </div>    
-    </div>  --> <!-- fin contact -->
+    </div>  <!-- fin contact -->
 
    
     
