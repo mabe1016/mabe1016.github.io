@@ -79,7 +79,6 @@ body{
 		bottom: -36px;
 		opacity: 1;
 	}
-	/* Gray Scale */
 	.hoverico li img {
 		-webkit-filter: grayscale(100%);
 		filter: grayscale(100%);
